@@ -1,0 +1,76 @@
+/* Voici le CSS de toutes les pages en général avec en première parrtie les réglages du html*/
+html{
+
+}
+
+/* Partie concernant tous les paramètres de la pages en général
+comprends les catégories body, header, footer, nav, section*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+footer{
+  background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+/* Boutons */
+button {
+
+}
+
+/* Liens */
+a{
+  color:orange;
+  text-decoration: none;
+}
+
+/* Ici est la partie des images*/
+img{
+  width:100
+}
+
+.caption{
+
+}
+
+.thumbnail{
+
+}
+
+#logo{
+
+}
+/* ###############     ############### */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: ;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
