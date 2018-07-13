@@ -9,12 +9,57 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+  color: pink;
+  font-style: oblique;
+}
+
 header {
-	background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
+  background-image: url('../Images/Polygon-3-01.png') no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  color : white;
+}
+
+header nav {
+  color : blue;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li{
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: #666;
+  line-height: 50px;
+  text-align: center;
+}
+
+header nav ul li ul li{
+  display: none;
+}
+
+header nav ul li a{
+  display: block;
+}
+
+header nav ul li a:hover{
+  background-color: pink;
+  opacity: 0.8;
+}
+
+header nav ul li:hover ul li{
+  display: block;
+  position: fixed;
+  height: 100px;
 }
 
 footer{
@@ -25,15 +70,8 @@ footer{
     color: white;
 }
 
-nav {
-    float: left;
-    width: 30%;
-    background: #ccc;
-    padding: 20px;
-}
 /* Boutons */
-button {
-
+.bouton {
 }
 
 /* Liens */
@@ -47,8 +85,19 @@ img{
   width:100
 }
 
-.caption{
+.title{
+  background-color: deepskyblue;
+  font-style: oblique;
+}
 
+.left{
+  float:left; 
+  margin:0 10px 0 20px;
+}
+
+.right{
+  float:right; 
+  margin:0 10px 0 20px;
 }
 
 .thumbnail{
@@ -56,19 +105,17 @@ img{
 }
 
 #logo{
-
 }
 /* ###############     ############### */
  .flex-container {
   display: flex;
-      flex-wrap: wrap;
-  background-color: ;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
-  width: 500px;
+  width: 200px;
+  height: 50px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
@@ -78,7 +125,7 @@ img{
 @media screen and (min-width: 950px)
 {
    .flex-container {
-  background-color:#FFF ;
+  background-image: ../Images/lights.jpg ;
   flex-wrap:  nowrap;
 
 }
