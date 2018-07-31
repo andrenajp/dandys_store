@@ -70,6 +70,15 @@ footer{
     color: white;
 }
 
+.div2 {
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background:url('../Images/Polygon-3-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /* Boutons */
 .bouton {
 }
@@ -101,7 +110,7 @@ img{
 }
 
 .thumbnail{
-
+  float: center;
 }
 
 #logo{
@@ -125,79 +134,13 @@ img{
 @media screen and (min-width: 950px)
 {
    .flex-container {
-  background-image: ../Images/lights.jpg ;
   flex-wrap:  nowrap;
 
 }
 
-
-/*@keyframes slider {
-
-0% {
-  left: 0;
+* {
+  box-sizing:border-box;
 }
-
-20% {
-  left: 0;
-}
-
-25% {
-  left: -100%;
-}
-
-45% {
-    left: -100%;
-
-}
-
-50% {
-    left: -200%;
-
-}
-
-70% {
-  left: -200%;
-}
-
-75% {
-  left: -300%;
-}
-
-95% {
-  left: -300%;
-}
-
-100% {
-  left: -400%;
-
-}
-
-}
-
-#slider {
-  overflow: hidden;
-}
-
-#slider figure img {
-  width: 20%;
-  float: left;
-}
-
-#slider figure{
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slider infinite; 
-}
-
-.slide{
-  align-content: center;
-}*/
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -290,4 +233,18 @@ img{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+.produit{
+  padding: 100px;
+  margin-bottom: 100px;
+
+}
+
+.visuel_produit{
+  position: relative;
+  text-align: center;
+  font-family: arial;
+  font-size: 10px;
 }
