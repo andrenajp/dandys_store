@@ -12,6 +12,7 @@ body{
 
 section{
   display: flex;
+	height:100%;
 }
 
 h1{
@@ -102,8 +103,25 @@ img{
 }
 .banniere{
   display: flex;
-  height: 600px;
-  background-color: black;
+  height: 100%;
+	width: 100%;
+  background-color: white;
+}
+
+.under-banniere{
+	display: flex;
+	height: 50%;
+	background-color: white;
+}
+
+.annonce-banniere{
+
+}
+
+.titre-brillant{
+	font: Arial;
+	font-style: italic;
+	color: grey;
 }
 
  .flex-container {
@@ -121,22 +139,37 @@ img{
   font-size: 30px;
 }
 .frame-for-photos{
+	height: 100%;
+	width: 100%;
 }
 
-.frame-photo{
+.frame-photo-left{
+	float: left;
+	height: 50%;
+	width: 50%;
+}
+
+.frame-photo-right{
+	float: right;
+	height: 50%;
+	width: 50%;
 }
 
 .footer-general{
   height: 100%;
-  background-color: #5C8587;
+	background-image: url('../Images/670720.jpg');
+	background-position: center;
+	background-size: cover;
 }
 .footer-sub-lev-1{
   height: 40%;
+	opacity:0.5;
   background-color: #D1E0E1;
 }
 
 .footer-sub-lev-2{
   height: 60%;
+	opacity:0.5;
   background-color: #8DD8DD;
 }
 
