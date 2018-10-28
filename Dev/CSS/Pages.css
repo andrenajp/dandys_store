@@ -10,11 +10,6 @@ body{
   background-image: url('../Images/background_template.png');
 }
 
-section{
-  display: flex;
-	height:100%;
-}
-
 h1{
   color: grey;
   font-style: oblique;
@@ -103,30 +98,49 @@ img{
 }
 .banniere{
   display: flex;
+	flex-direction: column;
   height: 100%;
 	width: 100%;
   background-color: white;
 }
 
-.under-banniere{
-	display: flex;
-	height: 50%;
-	background-color: white;
+.annonce-banniere{
+	height: 10%;
+	text-align: center;
 }
 
-.annonce-banniere{
+.upper-banniere{
+	height: 40%;
+	text-align: center;
+}
 
+.under-banniere{
+	height: 50%;
+  text-align: center;
+}
+
+.menu-interne{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.menu-interne > li{
+	margin:auto;
 }
 
 .titre-brillant{
 	font: Arial;
 	font-style: italic;
 	color: grey;
+	font-size: 5em;
 }
 
  .flex-container {
+	flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -138,6 +152,16 @@ img{
   line-height: 75px;
   font-size: 30px;
 }
+
+.flex-container > li {
+  width: 100px;
+  height: 25px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
 .frame-for-photos{
 	height: 100%;
 	width: 100%;
@@ -147,12 +171,24 @@ img{
 	float: left;
 	height: 50%;
 	width: 50%;
+	position: relative;
+  text-align: center;
+  color: red;
 }
 
 .frame-photo-right{
 	float: right;
 	height: 50%;
 	width: 50%;
+	position: relative;
+  text-align: center;
+  color: red;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
 }
 
 .footer-general{
@@ -190,6 +226,32 @@ img{
 	font-style: italic;
 	color: red;
 }
+
+/*div nav{
+	color: blue;
+	height: 100%;
+	float: center;
+	position: absolute;
+}
+
+div nav ul{
+	width: auto;
+}
+
+div nav ul li{
+  float: left;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+}
+
+div nav ul li ul li{
+  display: none;
+}
+
+div nav ul li a{
+  display: block;
+}*/
 
 footer {
   text-align: center;
